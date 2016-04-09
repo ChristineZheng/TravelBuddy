@@ -1,0 +1,9 @@
+<h1>Locations in the Database</h1>
+<% @locations.each do |u| %>
+  Name: <p> <%= link_to u.name, location_path(u) %> </p>
+  
+  Address: <p> <%= link_to u.addres, location_path(u) %> </p>
+
+  <% end %>
+    <%= link_to "new", locations_new_path %>
+<p>Find me in app/views/locations/index.html.erb</p>
